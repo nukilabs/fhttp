@@ -681,20 +681,8 @@ func (r *Request) write(w io.Writer, usingProxy bool, extraHeaders Header, waitF
 
 	// Use the defaultUserAgent unless the Header contains one, which
 	// may be blank to not send the header.
-	userAgent := defaultUserAgent
-	if r.Header.has("User-Agent") {
-		userAgent = r.Header.Get("User-Agent")
-	}
-	if userAgent != "" {
-		userAgent = headerNewlineToSpace.Replace(userAgent)
-		userAgent = textproto.TrimString(userAgent)
-		_, err = fmt.Fprintf(w, "User-Agent: %s\r\n", userAgent)
-		if err != nil {
-			return err
-		}
-		if trace != nil && trace.WroteHeaderField != nil {
-			trace.WroteHeaderField("User-Agent", []string{userAgent})
-		}
+	if !(r.Header.has("User-Agent") || r.Header.has("user-agent")) {
+		r.Header.Set("User-Agent", defaultUserAgent)
 	}
 
 	// Process Body,ContentLength,Close,Trailer
