@@ -2168,7 +2168,8 @@ func (sc *serverConn) newWriterAndRequest(st *stream, f *MetaHeadersFrame) (*res
 
 	rp.header = make(http.Header)
 	for _, hf := range f.RegularFields() {
-		rp.header.Add(sc.canonicalHeader(hf.Name), hf.Value)
+		rp.header.Add(hf.Name, hf.Value)
+		rp.header.Add(http.HeaderOrderKey, hf.Name)
 	}
 	if rp.authority == "" {
 		rp.authority = rp.header.Get("Host")
@@ -2181,6 +2182,12 @@ func (sc *serverConn) newWriterAndRequest(st *stream, f *MetaHeadersFrame) (*res
 	bodyOpen := !f.StreamEnded()
 	if bodyOpen {
 		if vv, ok := rp.header["Content-Length"]; ok {
+			if cl, err := strconv.ParseUint(vv[0], 10, 63); err == nil {
+				req.ContentLength = int64(cl)
+			} else {
+				req.ContentLength = 0
+			}
+		} else if vv, ok := rp.header["content-length"]; ok {
 			if cl, err := strconv.ParseUint(vv[0], 10, 63); err == nil {
 				req.ContentLength = int64(cl)
 			} else {
