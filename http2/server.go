@@ -40,6 +40,7 @@ import (
 	"os"
 	"reflect"
 	"runtime"
+	"slices"
 	"strconv"
 	"strings"
 	"sync"
@@ -2168,8 +2169,11 @@ func (sc *serverConn) newWriterAndRequest(st *stream, f *MetaHeadersFrame) (*res
 
 	rp.header = make(http.Header)
 	for _, hf := range f.RegularFields() {
-		rp.header.Add(hf.Name, hf.Value)
-		rp.header.Add(http.HeaderOrderKey, hf.Name)
+		rp.header[hf.Name] = append(rp.header[hf.Name], hf.Value)
+		if !slices.Contains(rp.header[http.HeaderOrderKey], hf.Name) {
+			rp.header[http.HeaderOrderKey] = append(rp.header[http.HeaderOrderKey], hf.Name)
+
+		}
 	}
 	if rp.authority == "" {
 		rp.authority = rp.header.Get("Host")
