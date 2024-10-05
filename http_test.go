@@ -16,7 +16,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sparkaio/fhttp/internal/testenv"
+	"github.com/nukilabs/fhttp/internal/testenv"
 )
 
 func TestForeachHeaderElement(t *testing.T) {
@@ -61,14 +61,14 @@ func TestCmdGoNoHTTPServer(t *testing.T) {
 	}
 	wantSym := map[string]bool{
 		// Verify these exist: (sanity checking this test)
-		"github.com/sparkaio/fhttp.(*Client).do":           true,
-		"github.com/sparkaio/fhttp.(*Transport).RoundTrip": true,
+		"github.com/nukilabs/fhttp.(*Client).do":           true,
+		"github.com/nukilabs/fhttp.(*Transport).RoundTrip": true,
 
 		// Verify these don't exist:
-		"github.com/sparkaio/fhttp.http2Server":           false,
-		"github.com/sparkaio/fhttp.(*Server).Serve":       false,
-		"github.com/sparkaio/fhttp.(*ServeMux).ServeHTTP": false,
-		"github.com/sparkaio/fhttp.DefaultServeMux":       false,
+		"github.com/nukilabs/fhttp.http2Server":           false,
+		"github.com/nukilabs/fhttp.(*Server).Serve":       false,
+		"github.com/nukilabs/fhttp.(*ServeMux).ServeHTTP": false,
+		"github.com/nukilabs/fhttp.DefaultServeMux":       false,
 	}
 	for sym, want := range wantSym {
 		got := bytes.Contains(out, []byte(sym))
@@ -89,7 +89,7 @@ func TestOmitHTTP2(t *testing.T) {
 	}
 	t.Parallel()
 	goTool := testenv.GoToolPath(t)
-	out, err := testenv.Command(t, goTool, "test", "-short", "-tags=nethttpomithttp2", "github.com/sparkaio/fhttp").CombinedOutput()
+	out, err := testenv.Command(t, goTool, "test", "-short", "-tags=nethttpomithttp2", "github.com/nukilabs/fhttp").CombinedOutput()
 	if err != nil {
 		t.Fatalf("go test -short failed: %v, %s", err, out)
 	}
@@ -101,7 +101,7 @@ func TestOmitHTTP2(t *testing.T) {
 func TestOmitHTTP2Vet(t *testing.T) {
 	t.Parallel()
 	goTool := testenv.GoToolPath(t)
-	out, err := testenv.Command(t, goTool, "vet", "-tags=nethttpomithttp2", "github.com/sparkaio/fhttp").CombinedOutput()
+	out, err := testenv.Command(t, goTool, "vet", "-tags=nethttpomithttp2", "github.com/nukilabs/fhttp").CombinedOutput()
 	if err != nil {
 		t.Fatalf("go vet failed: %v, %s", err, out)
 	}
@@ -162,7 +162,7 @@ func TestNoUnicodeStrings(t *testing.T) {
 			t.Fatal(err)
 		}
 
-		if path == "github.com/sparkaio/fhttp/internal/ascii" {
+		if path == "github.com/nukilabs/fhttp/internal/ascii" {
 			return fs.SkipDir
 		}
 		if !strings.HasSuffix(path, ".go") ||

@@ -9,10 +9,10 @@ import (
 	"log"
 	"net/url"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 
-	"github.com/sparkaio/fhttp/cookiejar"
-	"github.com/sparkaio/fhttp/httptest"
+	"github.com/nukilabs/fhttp/cookiejar"
+	"github.com/nukilabs/fhttp/httptest"
 )
 
 func ExampleNew() {

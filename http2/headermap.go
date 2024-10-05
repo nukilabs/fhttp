@@ -7,7 +7,7 @@ package http2
 import (
 	"sync"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 )
 
 var (

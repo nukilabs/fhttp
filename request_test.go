@@ -22,9 +22,9 @@ import (
 	"strings"
 	"testing"
 
-	. "github.com/sparkaio/fhttp"
-	http "github.com/sparkaio/fhttp"
-	"github.com/sparkaio/fhttp/httptest"
+	. "github.com/nukilabs/fhttp"
+	http "github.com/nukilabs/fhttp"
+	"github.com/nukilabs/fhttp/httptest"
 )
 
 func TestQuery(t *testing.T) {

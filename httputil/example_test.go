@@ -11,10 +11,10 @@ import (
 	"net/url"
 	"strings"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 
-	"github.com/sparkaio/fhttp/httptest"
-	"github.com/sparkaio/fhttp/httputil"
+	"github.com/nukilabs/fhttp/httptest"
+	"github.com/nukilabs/fhttp/httputil"
 )
 
 func ExampleDumpRequest() {

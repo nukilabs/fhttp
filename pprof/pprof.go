@@ -11,10 +11,10 @@
 //
 // To use pprof, link this package into your program:
 //
-//	import _ "github.com/sparkaio/fhttp/pprof"
+//	import _ "github.com/nukilabs/fhttp/pprof"
 //
 // If your application is not already running an http server, you
-// need to start one. Add "github.com/sparkaio/fhttp" and "log" to your imports and
+// need to start one. Add "github.com/nukilabs/fhttp" and "log" to your imports and
 // the following code to your main function:
 //
 //	go func() {
@@ -87,9 +87,9 @@ import (
 	"strings"
 	"time"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 
-	"github.com/sparkaio/fhttp/internal/profile"
+	"github.com/nukilabs/fhttp/internal/profile"
 )
 
 func init() {

@@ -17,9 +17,9 @@ import (
 	"testing"
 	"time"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 
-	"github.com/sparkaio/fhttp/http2/hpack"
+	"github.com/nukilabs/fhttp/http2/hpack"
 )
 
 // TestTestClientConn demonstrates usage of testClientConn.

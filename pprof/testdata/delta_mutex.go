@@ -18,10 +18,10 @@ import (
 	"log"
 	"runtime"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 
-	"github.com/sparkaio/fhttp/httptest"
-	"github.com/sparkaio/fhttp/pprof"
+	"github.com/nukilabs/fhttp/httptest"
+	"github.com/nukilabs/fhttp/pprof"
 )
 
 func main() {

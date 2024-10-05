@@ -28,12 +28,12 @@ import (
 	"testing/fstest"
 	"time"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 
-	"github.com/sparkaio/fhttp/internal/testenv"
+	"github.com/nukilabs/fhttp/internal/testenv"
 
-	. "github.com/sparkaio/fhttp"
-	"github.com/sparkaio/fhttp/httptest"
+	. "github.com/nukilabs/fhttp"
+	"github.com/nukilabs/fhttp/httptest"
 )
 
 const (

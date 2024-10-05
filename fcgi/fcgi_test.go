@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 )
 
 var sizeTests = []struct {

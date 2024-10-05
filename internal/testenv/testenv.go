@@ -24,8 +24,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/sparkaio/fhttp/internal/cfg"
-	"github.com/sparkaio/fhttp/internal/platform"
+	"github.com/nukilabs/fhttp/internal/cfg"
+	"github.com/nukilabs/fhttp/internal/platform"
 )
 
 // Save the original environment during init for use in checks. A test

@@ -18,7 +18,7 @@ import (
 	"strings"
 	"sync"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 )
 
 // hello world, the web server

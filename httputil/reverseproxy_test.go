@@ -25,11 +25,11 @@ import (
 	"testing"
 	"time"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 
-	"github.com/sparkaio/fhttp/httptest"
-	"github.com/sparkaio/fhttp/httptrace"
-	"github.com/sparkaio/fhttp/internal/ascii"
+	"github.com/nukilabs/fhttp/httptest"
+	"github.com/nukilabs/fhttp/httptrace"
+	"github.com/nukilabs/fhttp/internal/ascii"
 )
 
 const fakeHopHeader = "X-Fake-Hop-Header-For-Test"

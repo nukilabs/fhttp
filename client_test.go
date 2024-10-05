@@ -27,11 +27,11 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	"github.com/sparkaio/fhttp/internal/testenv"
+	"github.com/nukilabs/fhttp/internal/testenv"
 
-	. "github.com/sparkaio/fhttp"
-	"github.com/sparkaio/fhttp/cookiejar"
-	"github.com/sparkaio/fhttp/httptest"
+	. "github.com/nukilabs/fhttp"
+	"github.com/nukilabs/fhttp/cookiejar"
+	"github.com/nukilabs/fhttp/httptest"
 )
 
 var robotsTxtHandler = HandlerFunc(func(w ResponseWriter, r *Request) {

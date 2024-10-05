@@ -18,12 +18,12 @@ import (
 	"testing"
 	"time"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 
-	"github.com/sparkaio/fhttp/internal/profile"
-	"github.com/sparkaio/fhttp/internal/testenv"
+	"github.com/nukilabs/fhttp/internal/profile"
+	"github.com/nukilabs/fhttp/internal/testenv"
 
-	"github.com/sparkaio/fhttp/httptest"
+	"github.com/nukilabs/fhttp/httptest"
 )
 
 // TestDescriptions checks that the profile names under runtime/pprof package

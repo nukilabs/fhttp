@@ -18,11 +18,11 @@ import (
 	"strings"
 	"testing"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 
-	"github.com/sparkaio/fhttp/internal/testenv"
+	"github.com/nukilabs/fhttp/internal/testenv"
 
-	"github.com/sparkaio/fhttp/httptest"
+	"github.com/nukilabs/fhttp/httptest"
 )
 
 // This test is a CGI host (testing host.go) that runs its own binary

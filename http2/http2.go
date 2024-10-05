@@ -13,7 +13,7 @@
 // See https://http2.github.io/ for more information on HTTP/2.
 //
 // See https://http2.golang.org/ for a test server running this code.
-package http2 // import "github.com/sparkaio/fhttp/http2"
+package http2 // import "github.com/nukilabs/fhttp/http2"
 
 import (
 	"bufio"
@@ -27,7 +27,7 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 
 	"golang.org/x/net/http/httpguts"
 )

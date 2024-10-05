@@ -29,9 +29,9 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	"github.com/sparkaio/fhttp/internal/godebug"
+	"github.com/nukilabs/fhttp/internal/godebug"
 
-	"github.com/sparkaio/fhttp/httptrace"
+	"github.com/nukilabs/fhttp/httptrace"
 
 	"golang.org/x/net/http/httpguts"
 	"golang.org/x/net/http/httpproxy"

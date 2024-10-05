@@ -36,10 +36,10 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	http "github.com/sparkaio/fhttp"
-	"github.com/sparkaio/fhttp/http2"
+	http "github.com/nukilabs/fhttp"
+	"github.com/nukilabs/fhttp/http2"
 
-	"github.com/sparkaio/fhttp/http2/hpack"
+	"github.com/nukilabs/fhttp/http2/hpack"
 	"golang.org/x/term"
 )
 

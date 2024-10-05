@@ -11,7 +11,7 @@ import (
 	"sync"
 	"testing"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 )
 
 type newServerFunc func(http.Handler) *Server

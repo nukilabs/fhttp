@@ -13,7 +13,7 @@ import (
 	"strings"
 	"time"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 )
 
 func cgiMain() {

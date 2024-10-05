@@ -9,7 +9,7 @@ package httputil
 import (
 	"io"
 
-	"github.com/sparkaio/fhttp/internal"
+	"github.com/nukilabs/fhttp/internal"
 )
 
 // NewChunkedReader returns a new chunkedReader that translates the data read from r

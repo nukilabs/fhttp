@@ -11,7 +11,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/sparkaio/fhttp/internal/ascii"
+	"github.com/nukilabs/fhttp/internal/ascii"
 )
 
 // These parameter values are specified in section 5.

@@ -36,14 +36,14 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	"github.com/sparkaio/fhttp/internal/testenv"
+	"github.com/nukilabs/fhttp/internal/testenv"
 
-	. "github.com/sparkaio/fhttp"
-	"github.com/sparkaio/fhttp/httptest"
-	"github.com/sparkaio/fhttp/httptrace"
-	"github.com/sparkaio/fhttp/httputil"
-	"github.com/sparkaio/fhttp/internal"
-	"github.com/sparkaio/fhttp/internal/testcert"
+	. "github.com/nukilabs/fhttp"
+	"github.com/nukilabs/fhttp/httptest"
+	"github.com/nukilabs/fhttp/httptrace"
+	"github.com/nukilabs/fhttp/httputil"
+	"github.com/nukilabs/fhttp/internal"
+	"github.com/nukilabs/fhttp/internal/testcert"
 )
 
 type dummyAddr string

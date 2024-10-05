@@ -26,7 +26,7 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	"github.com/sparkaio/fhttp/internal/ascii"
+	"github.com/nukilabs/fhttp/internal/ascii"
 )
 
 // A Client is an HTTP client. Its zero value ([DefaultClient]) is a

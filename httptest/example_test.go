@@ -9,9 +9,9 @@ import (
 	"io"
 	"log"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 
-	"github.com/sparkaio/fhttp/httptest"
+	"github.com/nukilabs/fhttp/httptest"
 )
 
 func ExampleResponseRecorder() {

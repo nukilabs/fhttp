@@ -11,8 +11,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sparkaio/fhttp/internal/platform"
-	"github.com/sparkaio/fhttp/internal/testenv"
+	"github.com/nukilabs/fhttp/internal/platform"
+	"github.com/nukilabs/fhttp/internal/testenv"
 )
 
 func TestGoToolLocation(t *testing.T) {

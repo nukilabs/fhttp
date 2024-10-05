@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sparkaio/fhttp/internal/race"
+	"github.com/nukilabs/fhttp/internal/race"
 )
 
 var headerWriteTests = []struct {

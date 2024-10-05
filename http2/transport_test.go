@@ -32,12 +32,12 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 
-	"github.com/sparkaio/fhttp/httptest"
-	"github.com/sparkaio/fhttp/httptrace"
+	"github.com/nukilabs/fhttp/httptest"
+	"github.com/nukilabs/fhttp/httptrace"
 
-	"github.com/sparkaio/fhttp/http2/hpack"
+	"github.com/nukilabs/fhttp/http2/hpack"
 )
 
 var (

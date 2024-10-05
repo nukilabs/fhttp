@@ -23,7 +23,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/sparkaio/fhttp/internal/safefilepath"
+	"github.com/nukilabs/fhttp/internal/safefilepath"
 )
 
 // A Dir implements [FileSystem] using the native file system restricted to a

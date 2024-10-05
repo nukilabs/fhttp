@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 )
 
 func TestServer_Push_Success(t *testing.T) {

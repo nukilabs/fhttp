@@ -19,8 +19,8 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	http "github.com/sparkaio/fhttp"
-	"github.com/sparkaio/fhttp/internal/testcert"
+	http "github.com/nukilabs/fhttp"
+	"github.com/nukilabs/fhttp/internal/testcert"
 )
 
 // A Server is an HTTP server listening on a system-chosen port on the

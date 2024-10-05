@@ -16,10 +16,10 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	http "github.com/sparkaio/fhttp"
+	http "github.com/nukilabs/fhttp"
 
-	"github.com/sparkaio/fhttp/http2"
-	"github.com/sparkaio/fhttp/httptest"
+	"github.com/nukilabs/fhttp/http2"
+	"github.com/nukilabs/fhttp/httptest"
 )
 
 func ExampleNewHandler() {

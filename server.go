@@ -30,7 +30,7 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	"github.com/sparkaio/fhttp/internal/godebug"
+	"github.com/nukilabs/fhttp/internal/godebug"
 
 	"golang.org/x/net/http/httpguts"
 )
@@ -1138,7 +1138,7 @@ func relevantCaller() runtime.Frame {
 	var frame runtime.Frame
 	for {
 		frame, more := frames.Next()
-		if !strings.HasPrefix(frame.Function, "github.com/sparkaio/fhttp.") {
+		if !strings.HasPrefix(frame.Function, "github.com/nukilabs/fhttp.") {
 			return frame
 		}
 		if !more {

@@ -18,11 +18,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/sparkaio/fhttp/internal/godebug"
+	"github.com/nukilabs/fhttp/internal/godebug"
 
-	"github.com/sparkaio/fhttp/httptrace"
-	"github.com/sparkaio/fhttp/internal"
-	"github.com/sparkaio/fhttp/internal/ascii"
+	"github.com/nukilabs/fhttp/httptrace"
+	"github.com/nukilabs/fhttp/internal"
+	"github.com/nukilabs/fhttp/internal/ascii"
 
 	"golang.org/x/net/http/httpguts"
 )

@@ -25,8 +25,8 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	"github.com/sparkaio/fhttp/httptrace"
-	"github.com/sparkaio/fhttp/internal/ascii"
+	"github.com/nukilabs/fhttp/httptrace"
+	"github.com/nukilabs/fhttp/internal/ascii"
 
 	"golang.org/x/net/http/httpguts"
 	"golang.org/x/net/idna"

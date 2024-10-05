@@ -21,8 +21,8 @@ import (
 	"os"
 	"strings"
 
-	http "github.com/sparkaio/fhttp"
-	"github.com/sparkaio/fhttp/http2"
+	http "github.com/nukilabs/fhttp"
+	"github.com/nukilabs/fhttp/http2"
 	"golang.org/x/net/http/httpguts"
 )
 

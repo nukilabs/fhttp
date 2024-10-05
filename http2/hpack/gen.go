@@ -14,7 +14,7 @@ import (
 	"os"
 	"sort"
 
-	"github.com/sparkaio/fhttp/http2/hpack"
+	"github.com/nukilabs/fhttp/http2/hpack"
 )
 
 // http://tools.ietf.org/html/draft-ietf-httpbis-header-compression-07#appendix-B
