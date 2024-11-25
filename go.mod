@@ -4,7 +4,7 @@ go 1.23.0
 
 require (
 	github.com/andybalholm/brotli v1.1.1
-	github.com/klauspost/compress v1.17.4
+	github.com/klauspost/compress v1.17.11
 	github.com/nukilabs/utls v1.0.0
 	golang.org/x/net v0.31.0
 	golang.org/x/term v0.26.0
