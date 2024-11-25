@@ -37,7 +37,7 @@ import (
 	"testing/iotest"
 	"time"
 
-	tls "github.com/refraction-networking/utls"
+	tls "github.com/nukilabs/utls"
 
 	"github.com/nukilabs/fhttp/internal/nettrace"
 

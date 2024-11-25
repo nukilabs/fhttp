@@ -27,7 +27,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	tls "github.com/refraction-networking/utls"
+	tls "github.com/nukilabs/utls"
 
 	"github.com/nukilabs/fhttp/internal/godebug"
 

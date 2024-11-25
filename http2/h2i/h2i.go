@@ -34,7 +34,7 @@ import (
 	"strconv"
 	"strings"
 
-	tls "github.com/refraction-networking/utls"
+	tls "github.com/nukilabs/utls"
 
 	http "github.com/nukilabs/fhttp"
 	"github.com/nukilabs/fhttp/http2"

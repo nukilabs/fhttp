@@ -14,7 +14,7 @@ import (
 	"strings"
 	"testing"
 
-	tls "github.com/refraction-networking/utls"
+	tls "github.com/nukilabs/utls"
 
 	http "github.com/nukilabs/fhttp"
 

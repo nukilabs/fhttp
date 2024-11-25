@@ -23,7 +23,7 @@ import (
 	"bytes"
 	"context"
 	"crypto/rand"
-	tls "github.com/refraction-networking/utls"
+	tls "github.com/nukilabs/utls"
 	"encoding/binary"
 	"errors"
 	"fmt"
